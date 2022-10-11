@@ -1,0 +1,211 @@
+<html>
+  <head>
+    <title>weather app</title>
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/weather.png" />
+  </head>
+  <body>
+    <div id="main-container">
+      <section class="top-section">
+        <div class="city-info">
+          <div class="weather">
+            <div class="flex-city">
+              <img id="city-img" class="city-img" alt="no image" />
+              <input
+                list="city-dropDown"
+                name="cities"
+                id="selectedCity"
+                class="selectedCity"
+              />
+              <datalist id="city-dropDown"></datalist>
+            </div>
+            <div class="flex-time">
+              <div class="current-time">
+                <span id="current-time"> </span>
+                <small><span id="seconds"></span></small>
+                <img class="flex-img" id="flex-img" alt="no image" />
+              </div>
+              <div class="current-date" id="current-date"></div>
+            </div>
+          </div>
+          <div class="temp-humidity">
+            <div class="temperature">
+              <div class="celsius">
+                <div class="temp">Temp<sup>&#176;</sup>C</div>
+                <div class="degree" id="tempCelsius"></div>
+              </div>
+              <div class="border">
+                <div></div>
+              </div>
+              <div class="humi-percent">
+                <div class="humi">Humidity</div>
+                <div>
+                  <span class="degree" id="humidity"></span>
+                  <span class="percent-icon">%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="humi-preci">
+              <div class="farenheit">
+                <div class="temp">Temp F</div>
+                <div class="degree" id="tempFarenheit"></div>
+              </div>
+              <div class="border">
+                <div class></div>
+              </div>
+              <div class="preci-percent">
+                <div class="humi">Precipitation</div>
+                <div>
+                  <span class="degree" id="precipitation"></span>
+                  <span class="percent-icon">%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="time-info">
+          <div class="time-section">
+            <div class="time-fiveHrs"></div>
+            <div class="time-line">|</div>
+            <img class="time-img" alt="no image" />
+            <div class="temp-fiveHrs"></div>
+          </div>
+          <div class="time-section">
+            <div class="lines"></div>
+          </div>
+          <div class="time-section">
+            <div class="time-fiveHrs"></div>
+            <div class="time-line">|</div>
+            <img class="time-img" alt="no image" />
+            <div class="temp-fiveHrs"></div>
+          </div>
+          <div class="time-section">
+            <div class="lines"></div>
+          </div>
+          <div class="time-section">
+            <div class="time-fiveHrs"></div>
+            <div class="time-line">|</div>
+            <img class="time-img" alt="no image" />
+            <div class="temp-fiveHrs"></div>
+          </div>
+          <div class="time-section">
+            <div class="lines"></div>
+          </div>
+          <div class="time-section">
+            <div class="time-fiveHrs"></div>
+            <div class="time-line">|</div>
+            <img class="time-img" alt="no image" />
+            <div class="temp-fiveHrs"></div>
+          </div>
+          <div class="time-section">
+            <div class="lines"></div>
+          </div>
+          <div class="time-section">
+            <div class="time-fiveHrs"></div>
+            <div class="time-line">|</div>
+            <img class="time-img" alt="no image" />
+            <div class="temp-fiveHrs"></div>
+          </div>
+          <div class="time-section">
+            <div class="lines"></div>
+          </div>
+          <div class="time-section">
+            <div class="time-fiveHrs"></div>
+            <div class="time-line">|</div>
+            <img class="time-img" alt="no image" />
+            <div class="temp-fiveHrs"></div>
+          </div>
+        </div>
+      </section>
+      <section class="middle-section">
+        <div class="top-cities">
+          <div class="cityaround-container">
+            <div class="cities-around">Top cities around world</div>
+          </div>
+          <div class="displaytop-container">
+            <input
+              type="number"
+              name="number"
+              min="3"
+              max="10"
+              value="3"
+              id="spinBox"
+            />
+            <div class="display-font">Display Top</div>
+            <button id="rainy-button">
+              <img
+                id="display-rainy"
+                class="display-rainy"
+                src="assets\rainyIcon.svg"
+                alt="no image"
+              />
+            </button>
+            <button id="snowflake-button">
+              <img
+                id="display-snowflake"
+                class="display-rainy"
+                src="assets\snowflakeIcon.svg"
+                alt="no image"
+              />
+            </button>
+            <button id="sunny-button">
+              <img
+                id="display-sunny"
+                class="display-rainy"
+                src="assets\sunnyIcon.svg"
+                alt="no image"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="cardlayout-scrollbar">
+          <div class="scroll-navigation" id="scroll-backward">
+            <img
+              src="assets/backwardArrow.svg"
+              class="backwardArrow-img"
+              alt="no image"
+            />
+          </div>
+          <div class="card-layout" id="card-layout"></div>
+          <div class="scroll-navigation" id="scroll-forward">
+            <img
+              src="assets/forwardArrow.svg"
+              class="forwardArrow-img"
+              alt="no image"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="bottom-section">
+        <div class="continent-container">
+          <div class="continent-title">
+            Cities across continents at a Glance
+          </div>
+          <div class="sort-order-continent">
+            Continent Name&nbsp;
+            <img
+              class="arrow-img"
+              id="continent-arrow"
+              name="arrowDown"
+              src="assets/arrowDown.png"
+            />
+          </div>
+          <div class="sort-order-temperature">
+            Temperature&nbsp;
+            <img
+              class="arrow-img"
+              id="temperature-arrow"
+              name="arrowUp"
+              src="assets/arrowUp.png"
+            />
+          </div>
+        </div>
+        <div class="grid-continent" id="grid-continent"></div>
+      </section>
+    </div>
+  </body>
+  <script type="module" src="./js/weatherdata.js"></script>
+  <script type="module" src="./js/index.js"></script>
+  <script type="module" src="./js/utility.js"></script>
+</html>

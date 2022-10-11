@@ -1,0 +1,529 @@
+.arrow-img {
+  height: 27px;
+  width: 19px;
+}
+.backwardArrow-img,
+.forwardArrow-img {
+  height: 23px;
+  width: 23px;
+}
+body {
+  background-image: url("../assets/background.svg");
+  background-size: cover;
+  margin: 0px;
+}
+.border {
+  align-items: center;
+  border-left: 1.5px dotted white;
+  display: flex;
+  height: 55%;
+  width: 10%;
+}
+.bottom-section {
+  background-color: black;
+  padding: 5%;
+}
+.card-layout {
+  align-items: center;
+  background-color: black;
+  background-size: cover;
+  display: flex;
+  gap: 45px;
+  height: 260px;
+  margin: 0px auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+.cardlayout-bg {
+  background-color: rgb(52, 54, 54);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 70% 70%;
+  box-shadow: 0 0 5px 3px #282828;
+  display: flex;
+  height: 90%;
+  margin: 0px 25px;
+  min-width: 15.5rem;
+  padding: 10px;
+  width: 17.3%;
+  z-index: 1;
+}
+.cardlayout-bg:hover {
+  background-color: rgb(68, 68, 68);
+}
+.cardlayout-scrollbar {
+  align-items: center;
+  display: flex;
+}
+.celsius {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+}
+.cities-around {
+  font-size: 18px;
+}
+.cityaround-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 60%;
+}
+.city-img {
+  height: 60px;
+  margin-top: 5%;
+  width: 65px;
+}
+.city-info {
+  display: flex;
+  width: 45%;
+}
+.city-name {
+  color: rgb(154, 154, 154);
+  font-family: "arial";
+  font-size: 16px;
+}
+
+.continent-container {
+  color: rgb(185, 185, 185);
+  display: flex;
+  font-family: "arial";
+}
+
+.continent-humidity {
+  color: rgb(192, 192, 192);
+  font-size: 16px;
+}
+.continent-info {
+  background-color: rgb(46, 46, 46);
+  display: grid;
+  grid-template-columns: 85% 20%;
+  padding: 3%;
+  row-gap: 10px;
+  transition: transform 2ms;
+}
+.continent-info:hover {
+  animation-duration: 2s;
+  animation-name: grid-animation;
+  transform: scale(1.1);
+}
+.continent-name {
+  color: #fff461;
+  font-family: "arial";
+  font-size: 18px;
+}
+.continent-temp {
+  color: rgb(207, 207, 207);
+  font-family: "arial";
+  font-size: 22px;
+  font-weight: bold;
+}
+.continent-title {
+  font-size: 30px;
+  width: 100%;
+}
+.current-date {
+  color: white;
+  font-size: 18px;
+}
+.current-time {
+  color: #ffe5b4;
+  display: inline;
+  font-family: "arial";
+  font-size: 18px;
+}
+.date-card {
+  font-size: 17px;
+}
+.degree {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+}
+.display-font {
+  font-size: 15px;
+  padding-right: 15px;
+}
+.displaytop-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  padding-right: 2%;
+  width: 40%;
+}
+.displaytop-container > input[type="number"] {
+  background-color: rgb(55, 56, 56);
+  text-align: center;
+  color: white;
+  font-family: "arial";
+  font-size: 15px;
+  height: 22px;
+  width: 40px;
+}
+.display-rainy {
+  height: 28px;
+  width: 30px;
+  padding-bottom: 3px;
+}
+.farenheit {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.flex-city {
+  align-items: end;
+  column-gap: 8%;
+  display: flex;
+  height: 45%;
+}
+.flex-img {
+  height: 49px;
+  vertical-align: bottom;
+  width: 52px;
+}
+.flex-time {
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  margin-left: 30%;
+}
+.grid-continent {
+  display: grid;
+  gap: 20px 50px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+.humi {
+  color: lightgray;
+  font-family: "arial";
+  font-size: 16px;
+}
+.humi-percent {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.humi-preci {
+  align-items: flex-start;
+  display: flex;
+  height: 50%;
+}
+.humidity-icon {
+  height: 15px;
+  width: 15px;
+}
+.layout-icon {
+  display: inline;
+  height: 75%;
+  width: 15%;
+}
+
+.lines {
+  background-color: lightgray;
+  height: 12px;
+  margin-bottom: 26px;
+  width: 1px;
+}
+.middle-section {
+  background-color: black;
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+.place-card {
+  font-family: "Arial";
+  font-size: 20px;
+}
+.place-container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+  row-gap: 5%;
+  width: 50%;
+}
+
+.percent-card {
+  color: rgb(243, 243, 243);
+  font-size: 13px;
+}
+.percent-icon {
+  color: lightgray;
+  font-family: "arial";
+  font-size: 23px;
+}
+.preci-percent {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.selectedCity {
+  background-color: rgb(122, 120, 120);
+  color: rgb(186, 182, 182);
+  font-size: 20px;
+  height: 45%;
+  margin-top: 10%;
+  width: 50%;
+}
+.scroll-navigation {
+  align-content: center;
+  background-color: rgb(208, 208, 208);
+  border-radius: 50%;
+  display: none;
+  padding: 8px;
+  position: sticky;
+}
+.scroll-navigation:hover {
+  animation-duration: 2s;
+  animation-name: scroll-animation;
+}
+#rainy-button,
+#snowflake-button,
+#sunny-button {
+  background-color: black;
+}
+.sort-order-continent {
+  width: 22%;
+}
+.sort-order-temperature {
+  width: 18%;
+}
+.sort-order-continent,
+.sort-order-temperature {
+  font-family: "arial";
+  font-size: 20px;
+}
+.sunny-card {
+  height: 25px;
+  width: 30px;
+}
+.temp {
+  color: lightgray;
+  font-family: "arial";
+  font-size: 16px;
+}
+.temperature {
+  align-items: center;
+  display: flex;
+  height: 50%;
+}
+.temp-card {
+  color: white;
+  font-family: "arial";
+  font-size: 20px;
+}
+
+.temp-humidity {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3%;
+  width: 50%;
+}
+.temp-layout {
+  column-gap: 5%;
+  display: flex;
+  width: 40%;
+  padding: 3%;
+}
+
+.temp-fiveHrs,
+.time-line,
+.time-fiveHrs {
+  color: lightgray;
+  font-family: "arial";
+  font-size: 13px;
+}
+.time-img {
+  height: 20%;
+  width: 50%;
+}
+.time-info {
+  align-items: center;
+  display: flex;
+  width: 55%;
+}
+.time-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: center;
+  row-gap: 8%;
+  width: 10%;
+}
+.top-cities {
+  align-items: center;
+  color: grey;
+  display: flex;
+  font-family: "arial";
+  height: 20%;
+  left: 0px;
+  position: sticky;
+}
+.top-section {
+  display: flex;
+  height: 200px;
+  width: 100%;
+}
+.weather {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+@media screen and (max-width: 915px) {
+  .border {
+    height: 45%;
+  }
+  .city-img {
+    height: 40px;
+    width: 45px;
+  }
+  .current-date {
+    font-size: 12px;
+  }
+  .current-time {
+    font-size: 12px;
+  }
+  .degree {
+    font-size: 15px;
+  }
+  .flex-img {
+    width: 20px;
+    height: 20px;
+  }
+  .humi {
+    font-size: 12px;
+  }
+  .lines {
+    height: 11px;
+  }
+  .selectedCity {
+    font-size: 12px;
+  }
+  .percent-icon {
+    font-size: 15px;
+  }
+  .temp {
+    font-size: 12px;
+  }
+
+  .time-line {
+    font-size: 11px;
+  }
+  .top-section {
+    height: 130px;
+  }
+}
+@media all and (max-width: 900px) {
+  .card-layout {
+    gap: 25px;
+  }
+  .cardlayout-bg {
+    min-width: 13.5rem;
+  }
+  .cities-around {
+    font-size: 15px;
+  }
+  .date-card {
+    font-size: 13px;
+  }
+  .display-font {
+    font-size: 13px;
+  }
+  .display-rainy {
+    height: 22px;
+    width: 25px;
+  }
+  .displaytop-container > input[type="number"] {
+    font-size: 11px;
+    height: 25px;
+    width: 35px;
+  }
+  .percent-card {
+    font-size: 12px;
+  }
+  .place-card {
+    font-size: 15px;
+  }
+  .sunny-card {
+    height: 20px;
+    width: 25px;
+  }
+  .temp-card {
+    font-size: 15px;
+  }
+}
+@media all and (max-width: 1400px) {
+  .arrow-img {
+    height: 20px;
+    width: 17px;
+  }
+  .continent-title {
+    font-size: 25px;
+  }
+  .sort-order-continent,
+  .sort-order-temperature {
+    font-size: 17px;
+  }
+}
+@media all and (max-width: 1200px) {
+  .arrow-img {
+    height: 19px;
+    width: 16px;
+  }
+  .city-name {
+    font-size: 15px;
+  }
+  .continent-temp {
+    font-size: 19px;
+  }
+
+  .continent-title {
+    font-size: 25px;
+  }
+  .sort-order-continent,
+  .sort-order-temperature {
+    font-size: 18px;
+  }
+}
+@media all and (max-width: 1060px) {
+  .arrow-img {
+    height: 16px;
+    width: 14px;
+  }
+  .city-name {
+    font-size: 14px;
+  }
+  .continent-name {
+    font-size: 16px;
+  }
+
+  .continent-temp {
+    font-size: 18px;
+  }
+  .continent-title {
+    font-size: 21px;
+  }
+  .sort-order-continent,
+  .sort-order-temperature {
+    font-size: 16px;
+  }
+}
+@keyframes grid-animation {
+  100% {
+    background-color: rgb(94, 103, 105);
+  }
+}
+@keyframes scroll-animation {
+  100% {
+    background-color: lightblue;
+  }
+}
